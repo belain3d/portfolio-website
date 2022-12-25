@@ -1,5 +1,10 @@
+:root {
+    --image-size: 300px;
+}
+
 body {
     margin: 0;
+    background-color: rgb(197, 197, 197);
   }
   
   ul {
@@ -101,9 +106,10 @@ body {
     grid-template-columns: auto auto auto auto;
     margin-left: auto;
     margin-right: auto;
+    position: relative;
 }
 
-.box-flex {
+.box-flex-line {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -112,13 +118,42 @@ body {
     margin-top: 20px;
 }
 
-.box {
-    margin-left: 5px;
-    margin-right: 5px;
+/* Hover Thing */
+.container {
+    position: relative;
+    width: var(--image-size);
+    height: var(--image-size);
+    margin-left: 10px;
+    margin-right: 10px;
+  }
+  
+.container img {
+    width: var(--image-size);
+    height: var(--image-size);
+    object-fit: cover;
 }
 
-  .box img {
-    width: 300px;
-    height: 250px;
-    object-fit: cover;
+  .image {
+    display: block;
+    width: 100px;
+    height: 100px;
+    height: auto;
   }
+  
+  .overlay {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: var(--image-size);
+    width: var(--image-size);
+    opacity: 0;
+    transition: .5s ease;
+    background-color: black;
+  }
+  
+  .container:hover .overlay {
+    opacity: .5;
+  }
+  
