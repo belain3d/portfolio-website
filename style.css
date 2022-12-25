@@ -2,9 +2,11 @@
     --image-size: 300px;
     --image-size-phone: 60px;
     --image-size-middle: 250px;
-    --image-size-middle-smaller: 200px;
-    --image-size-small: 150px;
+    --image-size-middle-smaller: 170px;
+    --image-size-small: 120px;
     --image-size-small-smaller: 100px;
+    --image-size-small-smaller-smaller: 80px;
+    --image-size-mini: 60px;
 }
 
 body {
@@ -159,6 +161,35 @@ body {
     opacity: .5;
   }
   
+  .portfolio-section img {
+    max-width: 700px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .portfolio-title {
+    font-size: 45px;
+    max-width: 700px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    margin-bottom: 15px;
+  }
+
+  .portfolio-description {
+    margin-top: 30px;
+    margin-bottom: 30px;
+    max-width: 850px;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
 
 
   @media screen and (max-width: 1430px) {
@@ -190,6 +221,53 @@ body {
   }
 
   @media screen and (max-width: 1220px) {
+    ul {
+      list-style-type: none;
+      margin: 0;
+      padding: 0;
+      width: 20%;
+      background-color: #f1f1f1;
+      position: fixed;
+      height: 100%;
+      overflow: auto;
+      background-color: rgb(31, 30, 30);
+      color: white;
+    }
+
+    #profilepic {
+      width: 70px;
+      border-radius: 100px;
+      display: block;
+      margin-left: auto;
+      margin-right: auto;
+      margin-top: 15px;
+      margin-bottom: 15px;
+    }
+
+    #belagyenes {
+      font-size: 15px;
+      text-align: center;
+      margin: 0;
+    }
+
+    #description {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      font-size: 12px;
+      max-width: 70px;
+      flex-wrap: wrap;
+      margin-left: auto;
+      margin-right: auto;
+    }
+
+    .main-section {
+      margin-left:12%;
+      padding:1px 16px;
+      height:1000px;
+    }
+
     .container {
       position: relative;
       width: var(--image-size-middle-smaller);
@@ -218,6 +296,54 @@ body {
   }
 
   @media screen and (max-width: 1005px) {
+
+    ul {
+      list-style-type: none;
+      margin: 0;
+      padding: 0;
+      width: 20%;
+      background-color: #f1f1f1;
+      position: fixed;
+      height: 100%;
+      overflow: auto;
+      background-color: rgb(31, 30, 30);
+      color: white;
+    }
+
+    #profilepic {
+      width: 70px;
+      border-radius: 100px;
+      display: block;
+      margin-left: auto;
+      margin-right: auto;
+      margin-top: 15px;
+      margin-bottom: 15px;
+    }
+
+    #belagyenes {
+      font-size: 15px;
+      text-align: center;
+      margin: 0;
+    }
+
+    #description {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      font-size: 12px;
+      max-width: 70px;
+      flex-wrap: wrap;
+      margin-left: auto;
+      margin-right: auto;
+    }
+
+    .main-section {
+      margin-left:12%;
+      padding:1px 16px;
+      height:1000px;
+    }
+
     .container {
       position: relative;
       width: var(--image-size-small);
@@ -247,6 +373,53 @@ body {
 
   @media screen and (max-width: 760px) {
  
+    ul {
+      list-style-type: none;
+      margin: 0;
+      padding: 0;
+      width: 20%;
+      background-color: #f1f1f1;
+      position: fixed;
+      height: 100%;
+      overflow: auto;
+      background-color: rgb(31, 30, 30);
+      color: white;
+    }
+
+    #profilepic {
+      width: 70px;
+      border-radius: 100px;
+      display: block;
+      margin-left: auto;
+      margin-right: auto;
+      margin-top: 15px;
+      margin-bottom: 15px;
+    }
+
+    #belagyenes {
+      font-size: 15px;
+      text-align: center;
+      margin: 0;
+    }
+
+    #description {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      font-size: 12px;
+      max-width: 70px;
+      flex-wrap: wrap;
+      margin-left: auto;
+      margin-right: auto;
+    }
+
+    .main-section {
+      margin-left:12%;
+      padding:1px 16px;
+      height:1000px;
+    }
+
     .container {
       position: relative;
       width: var(--image-size-small-smaller);
@@ -271,6 +444,159 @@ body {
     .overlay {
       height: var(--image-size-small-smaller);
       width: var(--image-size-small-smaller);
+    }
+
+  }
+
+  @media screen and (max-width: 645px) {
+ 
+    ul {
+      list-style-type: none;
+      margin: 0;
+      padding: 0;
+      width: 20%;
+      background-color: #f1f1f1;
+      position: fixed;
+      height: 100%;
+      overflow: auto;
+      background-color: rgb(31, 30, 30);
+      color: white;
+    }
+
+    #profilepic {
+      width: 70px;
+      border-radius: 100px;
+      display: block;
+      margin-left: auto;
+      margin-right: auto;
+      margin-top: 15px;
+      margin-bottom: 15px;
+    }
+
+    #belagyenes {
+      font-size: 15px;
+      text-align: center;
+      margin: 0;
+    }
+
+    #description {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      font-size: 12px;
+      max-width: 70px;
+      flex-wrap: wrap;
+      margin-left: auto;
+      margin-right: auto;
+    }
+
+    .main-section {
+      margin-left:12%;
+      padding:1px 16px;
+      height:1000px;
+    }
+
+    .container {
+      position: relative;
+      width: var(--image-size-small-smaller-smaller);
+      height: var(--image-size-small-smaller-smaller);
+      margin-left: 10px;
+      margin-right: 10px;
+    }
+    
+  .container img {
+      width: var(--image-size-small-smaller-smaller);
+      height: var(--image-size-small-smaller-smaller);
+      object-fit: cover;
+  }
+  
+    .image {
+      display: block;
+      width: var(--image-size-small-smaller-smaller);
+      height: var(--image-size-small-smaller-smaller);
+      height: auto;
+    }
+
+    .overlay {
+      height: var(--image-size-small-smaller-smaller);
+      width: var(--image-size-small-smaller-smaller);
+    }
+
+  }
+
+  @media screen and (max-width: 535px) {
+    ul {
+      list-style-type: none;
+      margin: 0;
+      padding: 0;
+      width: 20%;
+      background-color: #f1f1f1;
+      position: fixed;
+      height: 100%;
+      overflow: auto;
+      background-color: rgb(31, 30, 30);
+      color: white;
+    }
+
+    #profilepic {
+      width: 70px;
+      border-radius: 100px;
+      display: block;
+      margin-left: auto;
+      margin-right: auto;
+      margin-top: 15px;
+      margin-bottom: 15px;
+    }
+
+    #belagyenes {
+      font-size: 15px;
+      text-align: center;
+      margin: 0;
+    }
+
+    #description {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      font-size: 12px;
+      max-width: 70px;
+      flex-wrap: wrap;
+      margin-left: auto;
+      margin-right: auto;
+    }
+
+    .main-section {
+      margin-left:12%;
+      padding:1px 16px;
+      height:1000px;
+    }
+
+    .container {
+      position: relative;
+      width: var(--image-size-mini);
+      height: var(--image-size-mini);
+      margin-left: 10px;
+      margin-right: 10px;
+    }
+    
+  .container img {
+      width: var(--image-size-mini);
+      height: var(--image-size-mini);
+      object-fit: cover;
+  }
+  
+    .image {
+      display: block;
+      width: var(--image-size-mini);
+      height: var(--image-size-mini);
+      height: auto;
+    }
+
+    .overlay {
+      height: var(--image-size-mini);
+      width: var(--image-size-mini);
     }
 
   }
