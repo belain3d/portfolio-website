@@ -1,5 +1,10 @@
 :root {
     --image-size: 300px;
+    --image-size-phone: 60px;
+    --image-size-middle: 250px;
+    --image-size-middle-smaller: 200px;
+    --image-size-small: 150px;
+    --image-size-small-smaller: 100px;
 }
 
 body {
@@ -45,7 +50,7 @@ body {
     margin-top: 30px;
   }
 
-  #artstation {
+  .other-links{
     margin-top: 30px;
     font-size: 20px;
     font-weight: bold;
@@ -79,6 +84,12 @@ body {
     margin-right: auto;
   }
 
+  .main-section {
+    margin-left:12%;
+    padding:1px 16px;
+    height:1000px;
+  }
+
   #belagyenes-site {
     font-size: 80px;
     max-width: 500px;
@@ -94,20 +105,11 @@ body {
     font-size: 30px;
     max-width: 750px;
     margin-top: 0px;
-    margin-bottom: 0px;
+    margin-bottom: 50px;
     margin-left: auto;
     margin-right: auto;
     text-align: center;
   }
-
-  .box-container {
-    margin: 0;
-    display: grid;
-    grid-template-columns: auto auto auto auto;
-    margin-left: auto;
-    margin-right: auto;
-    position: relative;
-}
 
 .box-flex-line {
     display: flex;
@@ -157,3 +159,194 @@ body {
     opacity: .5;
   }
   
+
+
+  @media screen and (max-width: 1430px) {
+    .container {
+      position: relative;
+      width: var(--image-size-middle);
+      height: var(--image-size-middle);
+      margin-left: 10px;
+      margin-right: 10px;
+    }
+    
+  .container img {
+      width: var(--image-size-middle);
+      height: var(--image-size-middle);
+      object-fit: cover;
+  }
+  
+    .image {
+      display: block;
+      width: var(--image-size-middle);
+      height: var(--image-size-middle);
+      height: auto;
+    }
+
+    .overlay {
+      height: var(--image-size-middle);
+      width: var(--image-size-middle);
+    }
+  }
+
+  @media screen and (max-width: 1220px) {
+    .container {
+      position: relative;
+      width: var(--image-size-middle-smaller);
+      height: var(--image-size-middle-smaller);
+      margin-left: 10px;
+      margin-right: 10px;
+    }
+    
+  .container img {
+      width: var(--image-size-middle-smaller);
+      height: var(--image-size-middle-smaller);
+      object-fit: cover;
+  }
+  
+    .image {
+      display: block;
+      width: var(--image-size-middle-smaller);
+      height: var(--image-size-middle-smaller);
+      height: auto;
+    }
+
+    .overlay {
+      height: var(--image-size-middle-smaller);
+      width: var(--image-size-middle-smaller);
+    }
+  }
+
+  @media screen and (max-width: 1005px) {
+    .container {
+      position: relative;
+      width: var(--image-size-small);
+      height: var(--image-size-small);
+      margin-left: 10px;
+      margin-right: 10px;
+    }
+    
+  .container img {
+      width: var(--image-size-small);
+      height: var(--image-size-small);
+      object-fit: cover;
+  }
+  
+    .image {
+      display: block;
+      width: var(--image-size-small);
+      height: var(--image-size-small);
+      height: auto;
+    }
+
+    .overlay {
+      height: var(--image-size-small);
+      width: var(--image-size-small);
+    }
+  }
+
+  @media screen and (max-width: 760px) {
+ 
+    .container {
+      position: relative;
+      width: var(--image-size-small-smaller);
+      height: var(--image-size-small-smaller);
+      margin-left: 10px;
+      margin-right: 10px;
+    }
+    
+  .container img {
+      width: var(--image-size-small-smaller);
+      height: var(--image-size-small-smaller);
+      object-fit: cover;
+  }
+  
+    .image {
+      display: block;
+      width: var(--image-size-small-smaller);
+      height: var(--image-size-small-smaller);
+      height: auto;
+    }
+
+    .overlay {
+      height: var(--image-size-small-smaller);
+      width: var(--image-size-small-smaller);
+    }
+
+  }
+
+  @media screen and (max-width: 450px) {
+    ul {
+      list-style-type: none;
+      margin: 0;
+      padding: 0;
+      width: 20%;
+      background-color: #f1f1f1;
+      position: fixed;
+      height: 100%;
+      overflow: auto;
+      background-color: rgb(31, 30, 30);
+      color: white;
+    }
+
+    #profilepic {
+      width: 70px;
+      border-radius: 100px;
+      display: block;
+      margin-left: auto;
+      margin-right: auto;
+      margin-top: 15px;
+      margin-bottom: 15px;
+    }
+
+    #belagyenes {
+      font-size: 15px;
+      text-align: center;
+      margin: 0;
+    }
+
+    #description {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      font-size: 12px;
+      max-width: 70px;
+      flex-wrap: wrap;
+      margin-left: auto;
+      margin-right: auto;
+    }
+
+    .main-section {
+      margin-left:12%;
+      padding:1px 16px;
+      height:1000px;
+    }
+
+    .container {
+      position: relative;
+      width: var(--image-size-phone);
+      height: var(--image-size-phone);
+      margin-left: 10px;
+      margin-right: 10px;
+    }
+    
+  .container img {
+      width: var(--image-size-phone);
+      height: var(--image-size-phone);
+      object-fit: cover;
+  }
+  
+    .image {
+      display: block;
+      width: var(--image-size-phone);
+      height: var(--image-size-phone);
+      height: auto;
+    }
+
+    .overlay {
+      height: var(--image-size-phone);
+      width: var(--image-size-phone);
+    }
+
+  }
